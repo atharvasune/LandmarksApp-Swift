@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+/**
+ * Struct with @main annotation, conforming to the App protocol is the
+ * entry point of the application
+ */
 @main
 struct LandmarksApp: App {
     var body: some Scene {
