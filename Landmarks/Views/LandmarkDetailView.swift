@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  SwiftUIView.swift
 //  Landmarks
 //
 //  Created by Atharva Sune on 12/10/22.
@@ -7,40 +7,42 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LandmarkDetailView: View {
+    let landmark: Landmark
     var body: some View {
-        VStack {
-            MapView()
+        ScrollView {
+            MapView(coordinate: landmark.locationCoordinates)
                 .frame(height: 300)
                 .ignoresSafeArea(edges: .top)
-            CustomImage()
+            CustomImage(image: landmark.image)
                 .offset(y: -130)
                 .padding(.bottom, -130)
             VStack(alignment: .leading){
-                Text("Foggy Day")
+                Text(landmark.name)
                     .font(.title)
                 HStack {
-                    Text("Pine Forest")
+                    Text(landmark.park)
                         .font(.subheadline)
                     Spacer()
-                    Text("Kodaikanal")
+                    Text(landmark.state)
                         .font(.subheadline)
                 }
                 .font(.subheadline)
                 .foregroundColor(.secondary)
                 Divider()
-                Text("About Pine Forest")
+                Text("About \(landmark.name)")
                     .font(.title2)
-                Text("Description about pine foret kodaikanal")
+                Text(landmark.description)
             }
             .padding()
-            Spacer()
         }
+        .navigationTitle(landmark.name)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LandmarkDetailView(landmark: landmarks[4])
     }
 }

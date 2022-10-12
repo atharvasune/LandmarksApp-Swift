@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct CustomImage: View {
+    var image: Image
     var body: some View {
-        Image("pexels-atharva-sune-12092209")
+        image
             .resizable()
             .aspectRatio(contentMode: .fill)
             .clipShape(Circle())
@@ -25,6 +26,6 @@ struct CustomImage: View {
 
 struct CustomImage_Previews: PreviewProvider {
     static var previews: some View {
-        CustomImage()
+        CustomImage(image: landmarks[1].image)
     }
 }
