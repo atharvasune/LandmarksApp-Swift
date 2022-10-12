@@ -8,7 +8,13 @@
 import SwiftUI
 
 struct LandmarkDetailView: View {
+    @EnvironmentObject var modelData: ModelData
     let landmark: Landmark
+    
+    var landMarkIndex: Int {
+        modelData.landmarks.firstIndex(where: {$0.id == landmark.id})!
+    }
+    
     var body: some View {
         ScrollView {
             MapView(coordinate: landmark.locationCoordinates)
@@ -38,11 +44,14 @@ struct LandmarkDetailView: View {
         }
         .navigationTitle(landmark.name)
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            FavouriteButton(isSet: $modelData.landmarks[landMarkIndex].isFavorite)
+        }
     }
 }
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkDetailView(landmark: landmarks[4])
+        LandmarkDetailView(landmark: ModelData().landmarks[4])
     }
 }

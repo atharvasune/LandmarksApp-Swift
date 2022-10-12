@@ -26,6 +26,6 @@ struct CustomImage: View {
 
 struct CustomImage_Previews: PreviewProvider {
     static var previews: some View {
-        CustomImage(image: landmarks[1].image)
+        CustomImage(image: ModelData().landmarks[1].image)
     }
 }
