@@ -51,6 +51,13 @@
 		7004E06C28F75AD700B8970B /* HikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
 		70124A4D290567170044C254 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		70124A4F29057B690044C254 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
+		70124A512906773C0044C254 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		70124A55290677B40044C254 /* screenshot-with-phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot-with-phone.png"; sourceTree = "<group>"; };
+		70124A56290677B40044C254 /* screenshot-landmark-detail-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot-landmark-detail-2.png"; sourceTree = "<group>"; };
+		70124A57290677B40044C254 /* screenshot-page-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot-page-1.png"; sourceTree = "<group>"; };
+		70124A58290677B40044C254 /* screenshot-landmark-detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot-landmark-detail.png"; sourceTree = "<group>"; };
+		70124A59290677B40044C254 /* screenshot-landmark-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot-landmark-list.png"; sourceTree = "<group>"; };
+		70124A5B290677B40044C254 /* Simulator Screen Recording - iPhone 13 Pro Max - 2022-10-24 at 00.47.02.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Simulator Screen Recording - iPhone 13 Pro Max - 2022-10-24 at 00.47.02.mp4"; sourceTree = "<group>"; };
 		704A9C7028F60EB000C59B63 /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		704A9C7328F60EB000C59B63 /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
 		704A9C7528F60EB000C59B63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,9 +128,48 @@
 			path = Hikes;
 			sourceTree = "<group>";
 		};
+		70124A522906777C0044C254 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		70124A53290677B40044C254 /* readme-assets */ = {
+			isa = PBXGroup;
+			children = (
+				70124A54290677B40044C254 /* images */,
+				70124A5A290677B40044C254 /* videos */,
+			);
+			path = "readme-assets";
+			sourceTree = "<group>";
+		};
+		70124A54290677B40044C254 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				70124A55290677B40044C254 /* screenshot-with-phone.png */,
+				70124A56290677B40044C254 /* screenshot-landmark-detail-2.png */,
+				70124A57290677B40044C254 /* screenshot-page-1.png */,
+				70124A58290677B40044C254 /* screenshot-landmark-detail.png */,
+				70124A59290677B40044C254 /* screenshot-landmark-list.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		70124A5A290677B40044C254 /* videos */ = {
+			isa = PBXGroup;
+			children = (
+				70124A5B290677B40044C254 /* Simulator Screen Recording - iPhone 13 Pro Max - 2022-10-24 at 00.47.02.mp4 */,
+			);
+			path = videos;
+			sourceTree = "<group>";
+		};
 		704A9C6728F60EB000C59B63 = {
 			isa = PBXGroup;
 			children = (
+				70124A53290677B40044C254 /* readme-assets */,
+				70124A522906777C0044C254 /* New Group */,
+				70124A512906773C0044C254 /* README.md */,
 				704A9C7228F60EB000C59B63 /* Landmarks */,
 				704A9C7128F60EB000C59B63 /* Products */,
 			);
